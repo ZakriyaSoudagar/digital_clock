@@ -146,6 +146,12 @@ var make2 = nap.split(" ");
         display.innerHTML ="wake up !!"
         reminder.innerText = "GOOD MORNING";
     }
+    if (wcon!=hour&& lcon!=hour&&ncon!=hour)
+    {
+        image.style.backgroundImage = 'url("./images/ballon.jpg")';
+        display.innerHTML =""
+        
+    }
 }, 10000);
 
     
@@ -153,57 +159,57 @@ var make2 = nap.split(" ");
     
 
 }
-    if(hour>4&&hour<12)
-    {
-    reminder.innerText = "GOOD MORNING";
-    }
-    if(hour>12&&hour<16)
-    {
-    reminder.innerText = "GOOD EVENING";
-    }
-    if(hour>16&&hour<24)
-    {
-    reminder.innerHTML = "GOOD NIGHT";
-    }
-const wake = document.getElementById("wake").value;
-const lunch = document.getElementById("lunch").value;
-const nap = document.getElementById("nap").value;
-var date = new Date();
-var hour = date.getHours();
-var checkHour = hour;
-if(ampm=="PM")
-{
-checkHour = hour + 12;
-}
+//     if(hour>4&&hour<12)
+//     {
+//     reminder.innerText = "GOOD MORNING";
+//     }
+//     if(hour>12&&hour<16)
+//     {
+//     reminder.innerText = "GOOD EVENING";
+//     }
+//     if(hour>16&&hour<24)
+//     {
+//     reminder.innerHTML = "GOOD NIGHT";
+//     }
+// const wake = document.getElementById("wake").value;
+// const lunch = document.getElementById("lunch").value;
+// const nap = document.getElementById("nap").value;
+// var date = new Date();
+// var hour = date.getHours();
+// var checkHour = hour;
+// if(ampm=="PM")
+// {
+// checkHour = hour + 12;
+// }
 // var checkTime = document.createElement("img");
 // checkTime.style.width="535px";
 // checkTime.style.height ="474px"
 
 
-    let image = document.getElementById("image");
-    var arrayImg = [];
-    arrayImg[0] = './images/wakeup.png.png';
-    arrayImg[1] = './images/goodnight.png.png';
-    arrayImg[2] = './images/lunch.png.png';
-    image.style.backgroundImage = 'url("./images/lunch.png.png")';
-    console.log(hour);
+//     let image = document.getElementById("image");
+//     var arrayImg = [];
+//     arrayImg[0] = './images/wakeup.png.png';
+//     arrayImg[1] = './images/goodnight.png.png';
+//     arrayImg[2] = './images/lunch.png.png';
+//     image.style.backgroundImage = 'url("./images/lunch.png.png")';
+//     console.log(hour);
     
-    var make = wake.split(" ");
-    console.log(make)
-    if (make[1]=="PM")
-    {
-        var tcon = (make.slice(0,1));
+//     var make = wake.split(" ");
+//     console.log(make)
+//     if (make[1]=="PM")
+//     {
+//         var tcon = (make.slice(0,1));
         
-     tcon = parseInt(tcon);
+//      tcon = parseInt(tcon);
      
-     tcon += 12
+//      tcon += 12
         
-    }
-    if (tcon==hour)
-    {
-        image.style.backgroundImage = 'url("./images/wakeup.png.png")';
-    }
-    console.log(tcon);
+//     }
+//     if (tcon==hour)
+//     {
+//         image.style.backgroundImage = 'url("./images/wakeup.png.png")';
+//     }
+    
     
 
 
